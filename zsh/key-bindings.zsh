@@ -14,3 +14,6 @@ bindkey -s "^[Op" "0"
 bindkey -s "^[Ol" "."
 bindkey -s "^[OM" "^M"
 
+# Use 'jk' instead of ESC
+bindkey -M viins 'jk' vi-cmd-mode
+

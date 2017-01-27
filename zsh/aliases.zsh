@@ -93,7 +93,7 @@ alias gam='git amend --reset-author'
 alias grv='git remote -v'
 alias grr='git remote rm'
 alias grad='git remote add'
-alias gr='git rebase'
+# alias gr='git rebase'
 alias gra='git rebase --abort'
 alias ggrc='git rebase --continue'
 alias gbi='git rebase --interactive'
@@ -211,3 +211,25 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# Quick Search
+alias gr='go() { grep -i $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
+alias gre='go() { grep $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
+
+
+# Server Build
+alias wa_depends="pushd $ECTL_HOME; make -j 16 dev-install; popd"
+alias wa_setup="pushd $ECTL_HOME; ./tools/scripts/dev_setup.sh; popd"
+alias wa_build="pushd $ECTL_HOME; make -j 16 dev; popd"
+alias wa_load="pushd $ECTL_HOME; make -j 16 dev-load; popd" # implies wa_build
+alias md=wa_build
+alias mdl=wa_load
+
+# Server Run
+alias wa_devshell=~/common/tools/scripts/wa_devshell
+alias wa_killall="ps aux | grep erlang | awk '{print \$2}' | xargs kill"
+
+# Mac hidden files
+alias macHide="defaults write com.apple.finder AppleShowAllFiles NO"
+alias macShow="defaults write com.apple.finder AppleShowAllFiles YES"
+
