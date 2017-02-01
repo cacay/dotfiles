@@ -15,14 +15,6 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 
-" Recover some default key bindings
-nnoremap <SPACE> l
-silent! unmap <C-z>
-silent! unmap ss
-silent! unmap sk
-silent! unmap sj
-
-
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
