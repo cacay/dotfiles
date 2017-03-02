@@ -214,8 +214,8 @@ alias dbmu='spring rake db:migrate:up'
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
 # Quick Search
-alias gr='go() { grep -i $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
-alias gre='go() { grep $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
+alias gr='go() { grep -n -i $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
+alias gre='go() { grep -n $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
 
 
 # Server Build
