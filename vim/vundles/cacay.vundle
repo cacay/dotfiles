@@ -1,7 +1,7 @@
-Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'fidian/hexmode'
-Plugin 'tpope/vim-sleuth'
+Bundle "ConradIrwin/vim-bracketed-paste"
+Bundle "bronson/vim-trailing-whitespace"
+Bundle "fidian/hexmode"
+Bundle "tpope/vim-sleuth"
 
 "" LaTeX
-Plugin 'lervag/vimtex'
+Bundle "lervag/vimtex"
