@@ -47,7 +47,6 @@ alias lsg='ll | grep'
 TRAPHUP() {
   source $yadr/zsh/aliases.zsh
 }
-
 alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
@@ -236,3 +235,6 @@ alias macShow="defaults write com.apple.finder AppleShowAllFiles YES"
 
 # Reason/React on Devservers
 alias k="node ~/www/html/intern/js/whatsapp/wambrowser/wamBuild.js"
+
+# Facebook
+alias dev="et devvm28518.prn1.facebook.com:8080"

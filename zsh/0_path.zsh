@@ -7,6 +7,7 @@ path=(
   $path
   $HOME/.yadr/bin
   $HOME/.yadr/bin/yadr
+  $HOME/.cargo/bin
   $HOME/.local/bin
   $GOPATH/bin
 )
