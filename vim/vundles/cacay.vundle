@@ -3,5 +3,11 @@ Bundle "bronson/vim-trailing-whitespace"
 Bundle "fidian/hexmode"
 Bundle "tpope/vim-sleuth"
 
-"" LaTeX
+" LaTeX
 Bundle "lervag/vimtex"
+
+" Reason
+Bundle "chenglou/vim-reason"
+
+" React
+" Bundle "pangloss/vim-javascript"

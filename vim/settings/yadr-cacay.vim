@@ -72,6 +72,12 @@ set spell
 " autocmd FileType json setlocal nospell
 
 
+" Facebook stuff
+augroup filetypedetect
+  au BufRead,BufNewFile *.tw setfiletype python
+augroup END
+
+
 " Python (workarounds)
 " set cindent
 

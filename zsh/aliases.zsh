@@ -234,3 +234,5 @@ alias wa_killall="ps aux | grep erlang | awk '{print \$2}' | xargs kill"
 alias macHide="defaults write com.apple.finder AppleShowAllFiles NO"
 alias macShow="defaults write com.apple.finder AppleShowAllFiles YES"
 
+# Reason/React on Devservers
+alias k="node ~/www/html/intern/js/whatsapp/wambrowser/wamBuild.js"
