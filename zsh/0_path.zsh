@@ -12,8 +12,6 @@ path=(
   $GOPATH/bin
 )
 
-# Nix
-NIX=$HOME/.nix-profile/etc/profile.d/nix.sh
-test -f NIX && . NIX
-
+# OCaml
+(( $+commands[opam] )) && eval $(opam config env)
 

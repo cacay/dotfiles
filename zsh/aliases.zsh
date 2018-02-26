@@ -236,5 +236,6 @@ alias macShow="defaults write com.apple.finder AppleShowAllFiles YES"
 # Reason/React on Devservers
 alias k="node ~/www/html/intern/js/whatsapp/wambrowser/wamBuild.js"
 
-# Facebook
-alias dev="et devvm28518.prn1.facebook.com:8080"
+# Mininet
+alias mininet="ssh -Y -l mininet -p 2222 localhost"
+alias frenetic="ssh -Y -l frenetic -p 2223 localhost"

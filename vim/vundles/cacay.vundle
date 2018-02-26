@@ -11,3 +11,7 @@ Bundle "chenglou/vim-reason"
 
 " React
 " Bundle "pangloss/vim-javascript"
+
+" Coq
+Bundle "let-def/vimbufsync"
+Bundle "the-lambda-church/coquille"

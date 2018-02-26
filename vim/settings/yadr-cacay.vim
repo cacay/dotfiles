@@ -45,6 +45,9 @@ nnoremap <leader>ep :tabnew ~/.yadr/vim/vundles/cacay.vundle<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>sp :source $MYVIMRC<cr>:VundleInstall<cr>
 
+" Make highlight visible
+set t_Co=16
+
 
 """"""""""""""""""""""""""""""
 " => VimLatex
