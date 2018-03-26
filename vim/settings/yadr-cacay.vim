@@ -88,10 +88,10 @@ augroup END
 " hi CheckedByCoq ctermbg=LightBlue guibg=LightGreen
 " hi SentToCoq ctermbg=blue guibg=LimeGreen
 "
-" autocmd FileType coq nnoremap <leader>j :CoqNext<cr>
-" autocmd FileType coq nnoremap <leader>k :CoqUndo<cr>
-" autocmd FileType coq nnoremap <leader>h :CoqToCursor<cr>
-" "autocmd FileType coq nnoremap <leader>kk :CoqKill<cr>
+autocmd FileType coq nnoremap sj :CoqNext<cr>
+autocmd FileType coq nnoremap sk :CoqUndo<cr>
+autocmd FileType coq nnoremap sh :CoqToCursor<cr>
+autocmd FileType coq nnoremap <leader>kk :CoqKill<cr>
 "
 "
 " " Latex
