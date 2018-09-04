@@ -89,6 +89,10 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
+
+  # clean
+  nuke = !git clean -xdff && git submodule foreach --recursive git clean -xdff && git reset --hard && git submodule foreach --recursive git reset --hard && git submodule update --init --recursive    # completely and utterly clean a repo
+
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [mergetool]

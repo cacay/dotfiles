@@ -52,6 +52,7 @@ set t_Co=16
 """"""""""""""""""""""""""""""
 " => VimLatex
 """"""""""""""""""""""""""""""
+let g:polyglot_disabled = ['latex']
 let g:vimtex_view_general_viewer
   \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
 let g:vimtex_view_general_options = '@line @pdf @tex'
