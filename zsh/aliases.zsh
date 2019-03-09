@@ -216,6 +216,8 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 alias gr='go() { grep -n -i $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
 alias gre='go() { grep -n $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}" }; go'
 
+# Count Lines
+alias count='find . -type f | xargs wc -l'
 
 # Server Build
 alias wa_depends="pushd $ECTL_HOME; make -j 16 dev-install; popd"

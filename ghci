@@ -1,2 +1,5 @@
+-- Multi-line input
 :set +m
+
+-- Shorter prompt
 :set prompt "λ "
