@@ -1,8 +1,16 @@
 # path, the 0 in the filename causes this to load first
+
+# Append a path to $PATH only if it's not already there.
 pathAppend() {
-  # Only adds to the path if it's not already there
   if ! echo $PATH | egrep -q "(^|:)$1($|:)" ; then
     PATH=$PATH:$1
+  fi
+}
+
+# Source a file if it exists.
+sourceIfExists() {
+  if test -r "$1" ; then
+    source "$1" > /dev/null 2> /dev/null
   fi
 }
 
@@ -19,4 +27,12 @@ pathAppend "$HOME/.local/bin"
 pathAppend "$GOPATH/bin"
 
 # OCaml
-(( $+commands[opam] )) && eval $(opam config env)
+sourceIfExists "$HOME/.opam/opam-init/init.zsh"
+
+# Nix
+sourceIfExists "$HOME/.nix-profile/etc/profile.d/nix.sh"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+sourceIfExists "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+sourceIfExists "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
