@@ -22,6 +22,7 @@ task :install => [:submodule_init, :submodules] do
   install_files(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   install_files(Dir.glob('{ghci}')) if want_to_install?('ghci config')
   install_files(Dir.glob('{ideavimrc}')) if want_to_install?('IdeaVim config')
+  install_files(Dir.glob('{sbt}')) if want_to_install?('sbt config (Scala Build Tool)')
   if want_to_install?('vim configuration (highly recommended)')
     install_files(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_vundle"].execute
