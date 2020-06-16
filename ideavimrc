@@ -1,0 +1,3 @@
+" Use jk to exit insert mode
+inoremap jk <Esc>
+set ideajoin
