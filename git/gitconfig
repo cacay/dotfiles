@@ -131,3 +131,5 @@
   path = .gitconfig.user
 [user]
 	email = coskuacay@gmail.com
+[pull]
+	ff = only
