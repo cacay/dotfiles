@@ -241,3 +241,9 @@ alias k="node ~/www/html/intern/js/whatsapp/wambrowser/wamBuild.js"
 # Mininet
 alias mininet="ssh -Y -l mininet -p 2222 localhost"
 alias frenetic="ssh -Y -l frenetic -p 2223 localhost"
+
+# Tar
+alias untar="tar -xf"
+
+# Printing with a Printer
+alias printer="lp -o sides=two-sided-long-edge"
