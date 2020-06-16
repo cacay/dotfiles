@@ -1,3 +1,6 @@
-*
-!.gitignore
-!*.sbt
+boot
+preloaded
+
+*.*/*
+!*.*/*.sbt
+!*.*/*.scala
