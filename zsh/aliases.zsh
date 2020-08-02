@@ -247,3 +247,6 @@ alias untar="tar -xf"
 
 # Printing with a Printer
 alias printer="lp -o sides=two-sided-long-edge"
+
+# The Fuck
+eval $(thefuck --alias)
