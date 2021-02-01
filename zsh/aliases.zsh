@@ -248,5 +248,8 @@ alias untar="tar -xf"
 # Printing with a Printer
 alias printer="lp -o sides=two-sided-long-edge"
 
+# Docker
+alias ddebug='docker run --rm -it $(docker build . | tee /dev/tty | tail -n1 | cut -d" " -f 3)'
+
 # The Fuck
 eval $(thefuck --alias)
