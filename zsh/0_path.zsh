@@ -23,8 +23,14 @@ export GOPATH="$HOME/gocode"
 pathAppend "$HOME/.yadr/bin"
 pathAppend "$HOME/.yadr/bin/yadr"
 pathAppend "$HOME/.cargo/bin"
+pathAppend "$HOME/.jenv/bin"
 pathAppend "$HOME/.local/bin"
 pathAppend "$GOPATH/bin"
+
+# jenv
+if (( $+commands[jenv] )) then
+  eval "$(jenv init -)"
+fi
 
 # OCaml
 sourceIfExists "$HOME/.opam/opam-init/init.zsh"
