@@ -219,18 +219,6 @@ alias gre='go() { grep -n $1 -rI --exclude="*.log" --exclude-dir="log" * "${@:2}
 # Count Lines
 alias count='find . -type f | xargs wc -l'
 
-# Server Build
-alias wa_depends="pushd $ECTL_HOME; make -j 16 dev-install; popd"
-alias wa_setup="pushd $ECTL_HOME; ./tools/scripts/dev_setup.sh; popd"
-alias wa_build="pushd $ECTL_HOME; make -j 16 dev; popd"
-alias wa_load="pushd $ECTL_HOME; make -j 16 dev-load; popd" # implies wa_build
-alias md=wa_build
-alias mdl=wa_load
-
-# Server Run
-alias wa_devshell=~/common/tools/scripts/wa_devshell
-alias wa_killall="ps aux | grep erlang | awk '{print \$2}' | xargs kill"
-
 # Mac hidden files
 alias macHide="defaults write com.apple.finder AppleShowAllFiles NO"
 alias macShow="defaults write com.apple.finder AppleShowAllFiles YES"
@@ -249,7 +237,4 @@ alias untar="tar -xf"
 alias printer="lp -o sides=two-sided-long-edge"
 
 # Docker
-alias ddebug='docker run --rm -it $(docker build . | tee /dev/tty | tail -n1 | cut -d" " -f 3)'
-
-# The Fuck
-eval $(thefuck --alias)
+alias ddebug=' go() { docker run --rm -it $(docker build ${@} | tee /dev/tty | tail -n1 | cut -d" " -f 3) }; go'
